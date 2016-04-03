@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ source 'https://rubygems.org'
 ruby '2.3.0'
 
 gem 'rails', '~> 4.2.6'
@@ -7,6 +7,8 @@ gem 'active_model_serializers', '= 0.10.0.rc4'
 gem 'rack-cors', require: 'rack/cors'
 gem 'pg'
 gem 'bcrypt', '~> 3.1.11'
+gem 'soundcloud', '~> 0.3.2'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 group :production do
   gem 'rails_12factor', '~> 0.0.3'
