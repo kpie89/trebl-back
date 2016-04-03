@@ -1,6 +1,11 @@
 class PlaylistsController < ApplicationController
   before_action :set_playlist, only: [:show, :update, :destroy]
 
+
+  def get_tracks
+    @tracks = Playlist.get_tracks
+    render json: @tracks
+  end
   # GET /playlists
   # GET /playlists.json
   def index
