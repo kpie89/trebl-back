@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :profiles, except: [:new, :edit]
+  resources :comments, except: [:new, :edit]
+  resources :playlists, except: [:new, :edit]
   resources :examples, except: [:new, :edit]
   post '/sign-up' => 'users#signup'
   post '/sign-in' => 'users#signin'
